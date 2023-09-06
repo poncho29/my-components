@@ -5,7 +5,10 @@ export const Forms = () => {
     <div>
       <h3 className='font-bold uppercase'>Input File con Drag and Drop</h3>
 
-      <InputFileDragAndDrop onChange={(e) => console.log(e)} />
+      <InputFileDragAndDrop
+        url=''
+        onChange={(e) => console.log(e)}
+      />
     </div>
   )
 }
