@@ -9,7 +9,7 @@ export const RootLayout = ({ children }: Props) => {
     <div className="w-full h-screen flex flex-col lg:flex-row">
       <Sidebar />
 
-      <div className="w-full h-screen p-4 overflow-y-auto lg:grow">
+      <div id="detail" className="w-full h-screen p-4 overflow-y-auto lg:grow">
         {children}
       </div>
     </div>
