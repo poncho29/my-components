@@ -4,10 +4,10 @@ import { Link, useLocation } from "react-router-dom";
 import { useMediaQuery } from "../hooks/useMediaQuery";
 
 const items = [
-  { key: 1, text: 'Inicio', path: '/'},
+  { key: 1, text: 'Inicio', path: '/' },
   { key: 2, text: 'Formularios', path: '/forms' },
   { key: 3, text: 'Layouts', path: '/layouts' },
-  { key: 4, text: 'Tablas',  path: '/tables' },
+  { key: 4, text: 'Tablas', path: '/tables' },
 ]
 
 export const Sidebar = () => {
@@ -20,7 +20,7 @@ export const Sidebar = () => {
     if (matches && !toogleMenu) {
       setToogleMenu(true);
     }
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [matches]);
 
   return (
@@ -40,7 +40,7 @@ export const Sidebar = () => {
       )}
 
       {toogleMenu && (
-        <ul className='bg-stone-300 lg:bg-transparent'>
+        <ul className='px-2 bg-stone-300 lg:bg-transparent'>
           {items.map(item => (
             <Link to={item.path} key={item.key}>
               <li className='h-10 flex items-center px-2 hover:bg-stone-400'>
